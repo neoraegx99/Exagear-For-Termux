@@ -39,5 +39,7 @@ mkdir exagear-fs/ && tar -C exagear-fs/ --warning=no-unknown-keyword --delay-dir
 ```
 5) Done. Let's start Exagear-For-Termux
 ```
+
+ที่มา: https://benisnous.com/run-ubuntu-14-04-trusty-tahr-x86-on-exagear-for-termux-android/
 ./start-exagear.sh
 ```
