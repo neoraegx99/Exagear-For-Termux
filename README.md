@@ -34,6 +34,16 @@ git submodule update
 ```
 4) Now let's download and unpack for example rootfs of Debian 10 system to exagear-fs folder. It is in this folder that unpacked distribution images should be stored:
 ```
+ubuntu 14 i386
+
+mkdir exagear-fs && cd exagear-fs
+wget https://partner-images.canonical.com/core/trusty/current/ubuntu-trusty-core-cloudimg-arm64-root.tar.gz
+tar -xvf ubuntu-trusty-core-cloudimg-arm64-root.tar.gz
+cd
+clear
+cd ExaTermux && bash start-exagear.sh
+
+
 wget https://github.com/termux/proot-distro/releases/download/v1.1-debian-rootfs/debian-buster-i386-2020.12.05.tar.gz
 mkdir exagear-fs/ && tar -C exagear-fs/ --warning=no-unknown-keyword --delay-directory-restore --preserve-permissions --strip=0 -xvf debian-buster-i386-2020.12.05.tar.gz --exclude='dev'||: && cd exagear-fs/ && mv debian-buster-i386-2020.12.05/* ./ && rm -rfv debian-buster-i386-2020.12.05/ && cd ../
 ```
