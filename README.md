@@ -38,7 +38,7 @@ ubuntu 14 i386
 
 mkdir exagear-fs && cd exagear-fs
 wget https://partner-images.canonical.com/core/trusty/current/ubuntu-trusty-core-cloudimg-arm64-root.tar.gz
-tar -xvf ubuntu-trusty-core-cloudimg-arm64-root.tar.gz
+tar -xvf ubuntu-trusty-core-cloudimg-i386-root.tar.gz
 cd
 clear
 cd ExaTermux && bash start-exagear.sh
